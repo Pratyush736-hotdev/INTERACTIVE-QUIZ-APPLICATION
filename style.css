@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f0f1a;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Animated Background */
+.background-animation {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, #1f1f3a, #0f0f1a);
+    animation: rotateBg 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotateBg {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #00f7ff;
+}
+
+.subtitle {
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.quiz-box {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 247, 255, 0.2);
+}
+
+#question {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.answers {
+    display: grid;
+    gap: 20px;
+}
+
+.answers button {
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.answers button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+.correct {
+    background: #00ff88 !important;
+}
+
+.wrong {
+    background: #ff004c !important;
+}
+
+.controls {
+    margin-top: 30px;
+    text-align: right;
+}
+
+#nextBtn {
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    background: #00f7ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.progress-container {
+    height: 8px;
+    background: #222;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#progressBar {
+    height: 8px;
+    width: 0%;
+    background: #00f7ff;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+#resultBox {
+    text-align: center;
+    margin-top: 30px;
+}
