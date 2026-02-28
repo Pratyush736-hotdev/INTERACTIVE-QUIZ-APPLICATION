@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultra Premium Quiz | Pratyush Tiwari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Particles -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+        <h1 class="gradient-text">Interactive Quiz Platform</h1>
+        <p>Ultra Premium Tech Experience</p>
+    </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+
+<section class="quiz-section">
+    <div class="quiz-card neon-border">
+        <h2 id="question"></h2>
+        <div id="answers" class="answers"></div>
+        <button id="nextBtn" class="neon-btn">Next Question</button>
+        <div id="scoreDisplay"></div>
+    </div>
+</section>
+
+<!-- ================= ABOUT FOUNDER ================= -->
+
+<section class="about-section">
+    <div class="about-card neon-border tilt-card">
+
+        <div class="founder-image">
+            <img src="founder.jpg" alt="Founder">
+        </div>
+
+        <div class="founder-details">
+            <h2 class="gradient-text">Pratyush Tiwari</h2>
+            <p class="role">Frontend Developer & Interactive Web Architect</p>
+
+            <p>
+                Creator of this ultra-premium interactive quiz system. 
+                Specialized in building immersive, animated, performance-driven 
+                web applications with modern UI/UX and futuristic design systems.
+            </p>
+
+            <div class="github-stats">
+                <i class="fab fa-github"></i>
+                <span>GitHub Repositories: </span>
+                <span id="repoCount">Loading...</span>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/Pratyush736-hotdev" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+    <p>© 2026 Pratyush Tiwari | Ultra Premium Quiz Platform</p>
+</footer>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
